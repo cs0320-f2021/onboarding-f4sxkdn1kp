@@ -69,12 +69,11 @@ public final class Main {
          	 input = input.trim();
        	   String[] arguments = input.split(" ");
          	 System.out.println(arguments[0]);
-         	 MathBot math = new MathBot(arguments[0], arguments[1])
-
+         	 MathBot math = new MathBot()
+         	 math.add()
+         	 math.subtract()
          	 // TODO: complete your REPL by adding commands for addition "add" and subtraction
          	 //  "subtract"
-         	 math.add(arguments[0], arguments[1])
-         	 math.subtract(arguments[0], arguments[1])
        	 } catch (Exception e) {
          	 // e.printStackTrace();
          	 System.out.println("ERROR: We couldn't process your input");
